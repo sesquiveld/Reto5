@@ -1,0 +1,42 @@
+<!DocType html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Ciclo 3 G9! </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/message.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+</head>
+<body>
+<h1>RENTA CAR!</h1>
+<!--                                     MESSAGE -->
+<div id="message">
+    <br>
+    <h5 style="text-align: center" >Adicionar / Actualizar Mensaje</h5>
+    <div style="text-align: center" id="postmsg">
+        <input type="number" id="idMessage" placeholder="id">
+        <input type="text" id="messageText" placeholder="messagetext">
+        <input type="number" id="idClientM" placeholder="idClient">
+        <input type="number" id="idCarM" placeholder="idCar">
+
+    </div>
+    <br>
+    <div style="text-align: center">
+        <button class="btn btn-primary" id="guardarmensaje" onclick="guardarMsg()">Guardar Mensaje</button>
+        <button class="btn btn-primary" id="editarmensaje" onclick="editarMsg()">Actualizar Mensaje</button>
+    </div>
+    <br>
+    <p></p>
+    <div>
+        <button class="btn btn-primary" id="backPrincipal" onclick= "location.href='principal.html'"> REGRESAR</button>
+    </div>
+
+
+    <h5>Consultar Mensaje</h5>
+    <button class="btn btn-primary" id="consultarMensaje" onclick="infoMsg()"> Consultar Mensaje </button>
+    <div  id="resultadoM"></div>
+</div>
+</body>
+</html>

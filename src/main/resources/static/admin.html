@@ -1,0 +1,43 @@
+<!DocType html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Ciclo 3 G9! </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/admin.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+</head>
+<body>
+<h1>RENTA CAR!</h1>
+
+<!--                                     GAMA                -->
+<div id="Admin">
+    <h5 style="text-align: center">Adicionar /Actualizar Administradores</h5>
+    <div style="text-align: center" class="form-row id="actAdmin">
+        <label>ID GAMA</label>
+        <input class ="form-admin" type="number" id="idGama" placeholder="id">
+        <label>PASSWORD</label>
+        <input class ="form-admin" type="password" id="password" placeholder="password">
+        <label>NAME</label>
+        <input class ="form-admin" type="text" id="name" placeholder="name">
+        <label>EMAIL</label>
+        <input class ="form-admin" type="text" id="email" placeholder="email">
+    </div>
+    <br>
+    <div style="text-align: center">
+        <button class="btn btn-primary" id="guardarAdmin" onclick="guardarAdmin()">Guardar</button>
+        <button class="btn btn-primary" id="editarAdmin" onclick="editarAdmin()">Actualizar</button>
+        <br>
+    </div>
+</div>
+    <div>
+        <button class="btn btn-primary" id="backPrincipal" onclick= "location.href='principal.html'"> Regresar </button>
+    </div>
+    <h5 style="text-align: center"></h5>
+    <button class="btn btn-primary" id="consultarAdmin" onclick="getAdmin()"> Consultar </button>
+    <div id="resultadoAdmin"></div>
+
+</body>
+</html>

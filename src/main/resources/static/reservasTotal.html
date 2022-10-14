@@ -1,0 +1,33 @@
+<!DocType html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Ciclo 3 G9! </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/reportes.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script type="text/javascript" src="js/reportes.js"></script>
+</head>
+<body>
+<h1>REPORTE!</h1>
+
+<div>
+    <br>
+    <h5 style="text-align: center">Por favor digite las fechas a consultar</h5>
+    <div style="text-align: center">
+        <label>Fecha Inicial</label>
+        <input type="date" id="startDate" placeholder="startDate">
+        <label>Fecha Final</label>
+        <input type="date" id="devolutionDate" placeholder="devolutionDate">
+    </div>
+    <div></div>
+    <br>
+    <div style="text-align: center">
+        <button class="btn btn-primary" id="back" onclick= "location.href='principal.html'">Regresar </button>
+        <button class="btn btn-primary" id="reporte" onclick="traerReporte()">Consultar</button>
+    </div>
+    <div id ="conteoReservas"></div>
+</div>
+</body>
+</html>

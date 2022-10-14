@@ -1,0 +1,58 @@
+<!DocType html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title> Ciclo 3 G9! </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/reservScore.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+</head>
+<body>
+<h1>RENTA CAR!</h1>
+
+<div id="reservation">
+    <br>
+    <h5 style="text-align: center">Adicionar / Actualizar Reservacion</h5>
+    <div style="text-align: center"id="postReservation">
+        <input type="number" id="idReservation" placeholder="idReservation">
+        <input type="date" id="startDate" placeholder="startDate">
+        <input type="date" id="devolutionDate" placeholder="devolutionDate">
+        <input type="text" id="status" placeholder="status">
+        <input type="number" id="idClientR" placeholder="idClient">
+        <input type="number" id="idCarR" placeholder="idCar">
+        <br>
+        <br>
+        <input type="number" id="idScore" placeholder="idScore">
+        <input type="number" id="starR" placeholder="stars">
+        <input type="text" id="message" placeholder="message">
+        <input type="number" id="idReservationS" placeholder="idReservation">
+    </div>
+    <br>
+    <div style="text-align: center">
+        <button class="btn btn-primary" id="guardarReservation" onclick="guardarReservation()">Guardar Reservation</button>
+        <button class="btn btn-primary" id="editarReservation" onclick="editarReservation()">Actualizar Reservation</button>
+        <button class="btn btn-primary" id="guardarScore" onclick="guardarScore()">Guardar Score</button>
+        <button class="btn btn-primary" id="editarScore" onclick="updateScore()">Actualizar Score</button>
+    </div>
+    <div>
+        <button class="btn btn-primary" onclick= "location.href='principal.html'">REGRESAR</button>
+    </div>
+    <p></p>
+    <br>
+    <div>
+
+        <div style="text-align: center">
+            <h5>Consultar Reservation</h5>
+            <button class="btn btn-primary" id="consultarReservation" onclick="infoReservation()"> Consultar Reservation </button>
+            <div  id="resultadoR"></div>
+            <h5>Consultar Score</h5>
+            <button class="btn btn-primary" id="consultarScore" onclick="getAdmin()"> Consultar Score</button>
+            <div id="resultadoS"></div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

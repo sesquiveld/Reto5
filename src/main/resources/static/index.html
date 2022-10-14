@@ -1,0 +1,60 @@
+<!DocType html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-EdGe"/>
+    <meta name="viewport" content="width=device-width, inicial-scale=1" />
+    <meta name="author" content="Sandra Esquivel" />
+    <meta name="description" content="Proyecto Mintic 2022 U.SergioArboleda" />
+    <meta name="keywords" content="OAuth2, MisionTic, Sergio Arboleda" />
+
+    <title> Ciclo 3 G9! </title>
+    <base href="/" />
+    <!--
+      <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/boostrap.min.css" />
+      <script type="text/javascript" src="/webjars/jquery/jquery.min.js" ></script>
+      <script type="text/javascript" src="/webjars/bootstrap/js/boostrap.min.css" ></script>
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="js/misFunciones.js"></script> -->
+    <script type="text/javascript" src="js/reportes.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>Tabla</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<h1> BIENVENIDO</h1>
+<img src="img/MisionTicMastertech.png" alt ="MisionTicMastertech.png" width="200" height="100">
+
+<div style="text-align: center" class="container mt 5">
+    <h1 class="text-center">RENTA CAR!</h1>
+    <button class="btn btn-primary" onclick= "location.href='gama.html'">GAMA</button>
+    <button class="btn btn-primary" onclick= "location.href='car.html'">CAR</button>
+    <button class="btn btn-primary" onclick= "location.href='client.html'">CLIENTE </button>
+    <button class="btn btn-primary" onclick= "location.href='message.html'">MESSAGE</button>
+    <button class="btn btn-primary" onclick= "location.href='reservation.html'">RESERVATION</button>
+    <button class="btn btn-primary" onclick= "location.href='admin.html'">ADMINISTRADORES</button>
+    <br>
+    <br>
+    <button class="btn btn-primary">REPORTES</button>
+    <table class="table text-center table-striped">
+        <thead>
+        <tr>
+            <th><button class="btn btn-success" onclick= "location.href='reservasTotal.html'">Reservas </button></th>
+            <th><button class="btn btn-success">Reservas Completadas vs Canceladas</button></th>
+            <div id = "completedVsCancelled"> </div>
+            <th><button class="btn btn-success">Top Clientes</button></th>
+            <div id = "topClient"></div>
+        </tr>
+        </thead>
+    </table>
+</div>
+</body>
+</html>
